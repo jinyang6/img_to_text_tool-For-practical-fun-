@@ -9,7 +9,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 root = tk.Tk()
 root.title("ImgtoText")
 root.resizable(0, 0)
-
+print(pytesseract.get_languages(config=''))
 
 
 def copy_to_clipboard(win, text):
@@ -18,7 +18,7 @@ def copy_to_clipboard(win, text):
 
 
 def get_text_from_img(img):
-    return pytesseract.image_to_string(img)
+    return pytesseract.image_to_string(img, lang='chi_sim+eng+jpn+kor')
 
 
 def show_image(image):
