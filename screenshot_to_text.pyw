@@ -7,6 +7,7 @@ user32 = windll.user32
 user32.SetProcessDPIAware()
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 root = tk.Tk()
+root.title("ImgtoText")
 root.resizable(0, 0)
 
 
